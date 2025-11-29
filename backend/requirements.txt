@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+pydantic
+python-multipart
+python-dotenv
+motor
+
+langchain
+langchain-core
+langchain-community
+langchain-groq
