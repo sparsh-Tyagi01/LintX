@@ -286,3 +286,16 @@ button:focus-visible {
     @apply bg-background text-foreground;
   }
 }
+
+
+
+
+@layer components {
+  .lint-line-critical { text-decoration: underline wavy red; }
+  .lint-line-warning { text-decoration: underline dotted #f59e0b; }
+  .lint-line-info { text-decoration: underline dashed #38bdf8; }
+
+  .lint-glyph-critical { background-color: #ef4444; width: 8px; height: 8px; display:inline-block; border-radius:2px; }
+  .lint-glyph-warning { background-color: #f59e0b; width:8px; height:8px; display:inline-block; border-radius:2px; }
+  .lint-glyph-info { background-color: #38bdf8; width:8px; height:8px; display:inline-block; border-radius:2px; }
+}
