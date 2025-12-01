@@ -239,7 +239,7 @@ export default function App() {
             <select
               value={language}
               onChange={handleLanguageChange}
-              className="text-black px-2 py-1 rounded"
+              className="text-white px-2 py-1 rounded focus:outline-none border-2 p-2 border-blue-800"
             >
               <option value="python">Python</option>
               <option value="javascript">JavaScript</option>
