@@ -10,12 +10,13 @@ from langchain_core.output_parsers import StrOutputParser
 load_dotenv()
 
 os.environ['GROQ_API_KEY'] = os.getenv("GROQ_API_KEY")
+API_BASE_URL = os.getenv("API_BASE_URL")
 
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[API_BASE_URL],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
